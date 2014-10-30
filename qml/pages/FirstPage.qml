@@ -145,6 +145,11 @@ Page {
                             text: "Rename"
                             onClicked: pageStack.push(renameDialog)
                         }
+                        MenuItem {
+                            text: "Share"
+                            onClicked: pageStack.push(Qt.resolvedUrl("Share.qml"), {title: model.text,
+                                                          path: recorder.getLocation() + "/" + model.text})
+                        }
                     }
                 }
 

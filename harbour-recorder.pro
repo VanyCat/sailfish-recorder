@@ -10,7 +10,8 @@ TARGET = harbour-recorder
 
 CONFIG += sailfishapp
 
-SOURCES += src/harbour-recorder.cpp
+SOURCES += src/harbour-recorder.cpp \
+    src/codecsetting.cpp
 
 OTHER_FILES += \
     qml/cover/CoverPage.qml \
@@ -22,10 +23,12 @@ OTHER_FILES += \
     qml/record.png \
     qml/pages/Settings.qml \
     qml/harbour-recorder.qml \
-    qml/util/Popup.qml
+    qml/util/Popup.qml \
+    qml/pages/Share.qml
 
 HEADERS += \
-    src/harbour-recorder.h
+    src/harbour-recorder.h \
+    src/codecsetting.h
 
 QT +=\
     multimedia
